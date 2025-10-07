@@ -55,7 +55,7 @@ export default async function HomePage() {
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {services.slice(0, 3).map((service) => (
+            {services.slice(0, 3).map((service: Service) => (
               <ServiceCard key={service.id} service={service as Service} />
             ))}
           </div>
@@ -83,7 +83,7 @@ export default async function HomePage() {
             </div>
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              {caseStudies.slice(0, 2).map((caseStudy) => (
+              {caseStudies.slice(0, 2).map((caseStudy: CaseStudy) => (
                 <CaseStudyCard key={caseStudy.id} caseStudy={caseStudy as CaseStudy} />
               ))}
             </div>
@@ -111,7 +111,7 @@ export default async function HomePage() {
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {teamMembers.slice(0, 3).map((member) => (
+            {teamMembers.slice(0, 3).map((member: TeamMember) => (
               <TeamMemberCard key={member.id} member={member as TeamMember} />
             ))}
           </div>
@@ -139,7 +139,7 @@ export default async function HomePage() {
             </div>
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {testimonials.slice(0, 3).map((testimonial) => (
+              {testimonials.slice(0, 3).map((testimonial: Testimonial) => (
                 <TestimonialCard key={testimonial.id} testimonial={testimonial as Testimonial} />
               ))}
             </div>
