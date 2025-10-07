@@ -4,7 +4,7 @@ import type { CaseStudy } from '@/types'
 export default function CaseStudyCard({ caseStudy }: { caseStudy: CaseStudy }) {
   return (
     <Link href={`/case-studies/${caseStudy.slug}`}>
-      <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 h-full">
+        <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 h-full">
         {caseStudy.metadata.featured_image && (
           <div className="aspect-video overflow-hidden">
             <img
@@ -18,13 +18,13 @@ export default function CaseStudyCard({ caseStudy }: { caseStudy: CaseStudy }) {
           <p className="text-orange-500 font-semibold mb-2">
             {caseStudy.metadata.client_name}
           </p>
-          <h3 className="text-2xl font-bold text-gray-900 mb-3">
+            <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-3">
             {caseStudy.metadata.title}
           </h3>
-          <p className="text-gray-600 leading-relaxed mb-4 line-clamp-3">
+            <p className="text-gray-600 dark:text-gray-300 leading-relaxed mb-4 line-clamp-3">
             {caseStudy.metadata.challenge}
           </p>
-          <span className="text-blue-900 font-semibold hover:text-blue-700">
+            <span className="text-blue-900 dark:text-blue-400 font-semibold hover:text-blue-700 dark:hover:text-blue-300">
             Read Case Study →
           </span>
         </div>

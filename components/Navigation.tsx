@@ -7,7 +7,7 @@ export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false)
 
   return (
-    <nav className="bg-blue-900 text-white shadow-lg sticky top-0 z-50">
+      <nav className="bg-blue-900 dark:bg-gray-900 text-white shadow-lg sticky top-0 z-50 transition-colors duration-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <Link href="/" className="text-2xl font-bold">
@@ -51,7 +51,7 @@ export default function Navigation() {
           {/* Mobile menu button */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="md:hidden p-2 rounded-md hover:bg-blue-800 transition-colors duration-200"
+              className="md:hidden p-2 rounded-md hover:bg-blue-800 dark:hover:bg-gray-800 transition-colors duration-200"
             aria-label="Toggle menu"
           >
             <svg

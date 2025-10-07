@@ -17,7 +17,7 @@ export default async function HomePage() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-blue-900 to-blue-700 text-white py-20">
+        <section className="bg-gradient-to-br from-blue-900 to-blue-700 dark:from-gray-900 dark:to-gray-800 text-white py-20 transition-colors duration-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-5xl font-bold mb-6">
@@ -45,11 +45,11 @@ export default async function HomePage() {
       </section>
 
       {/* Services Preview */}
-      <section className="py-16 bg-gray-50">
+        <section className="py-16 bg-gray-50 dark:bg-gray-800 transition-colors duration-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Our Services</h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+              <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">Our Services</h2>
+              <p className="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
               Comprehensive solutions tailored to your business needs
             </p>
           </div>
@@ -63,7 +63,7 @@ export default async function HomePage() {
           <div className="text-center mt-12">
             <Link
               href="/services"
-              className="text-blue-900 hover:text-blue-700 font-semibold text-lg"
+                className="text-blue-900 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 font-semibold text-lg"
             >
               View All Services →
             </Link>
@@ -73,11 +73,11 @@ export default async function HomePage() {
 
       {/* Case Studies Preview */}
       {caseStudies.length > 0 && (
-        <section className="py-16 bg-white">
+          <section className="py-16 bg-white dark:bg-gray-900 transition-colors duration-200">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
-              <h2 className="text-4xl font-bold text-gray-900 mb-4">Success Stories</h2>
-              <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+                <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">Success Stories</h2>
+                <p className="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
                 Real results for real businesses
               </p>
             </div>
@@ -91,7 +91,7 @@ export default async function HomePage() {
             <div className="text-center mt-12">
               <Link
                 href="/case-studies"
-                className="text-blue-900 hover:text-blue-700 font-semibold text-lg"
+                  className="text-blue-900 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 font-semibold text-lg"
               >
                 View All Case Studies →
               </Link>
@@ -101,11 +101,11 @@ export default async function HomePage() {
       )}
 
       {/* Team Preview */}
-      <section className="py-16 bg-gray-50">
+        <section className="py-16 bg-gray-50 dark:bg-gray-800 transition-colors duration-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Meet Our Team</h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+              <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">Meet Our Team</h2>
+              <p className="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
               Experienced professionals dedicated to your success
             </p>
           </div>
@@ -119,7 +119,7 @@ export default async function HomePage() {
           <div className="text-center mt-12">
             <Link
               href="/team"
-              className="text-blue-900 hover:text-blue-700 font-semibold text-lg"
+                className="text-blue-900 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 font-semibold text-lg"
             >
               Meet the Full Team →
             </Link>
@@ -129,11 +129,11 @@ export default async function HomePage() {
 
       {/* Testimonials */}
       {testimonials.length > 0 && (
-        <section className="py-16 bg-blue-900 text-white">
+          <section className="py-16 bg-blue-900 dark:bg-gray-900 text-white transition-colors duration-200">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
-              <h2 className="text-4xl font-bold mb-4">What Our Clients Say</h2>
-              <p className="text-xl text-blue-100 max-w-2xl mx-auto">
+                <h2 className="text-4xl font-bold mb-4">What Our Clients Say</h2>
+                <p className="text-xl text-blue-100 dark:text-gray-300 max-w-2xl mx-auto">
                 Don't just take our word for it
               </p>
             </div>
@@ -147,7 +147,7 @@ export default async function HomePage() {
             <div className="text-center mt-12">
               <Link
                 href="/testimonials"
-                className="text-white hover:text-blue-200 font-semibold text-lg"
+                  className="text-white hover:text-blue-200 dark:hover:text-gray-300 font-semibold text-lg"
               >
                 Read More Testimonials →
               </Link>
