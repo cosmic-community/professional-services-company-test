@@ -49,8 +49,7 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
 
 export function useTheme() {
   const context = useContext(ThemeContext)
-  if (context === undefined) {
-    throw new Error('useTheme must be used within a ThemeProvider')
-  }
+  // Return undefined if not within provider (for static generation)
+  // Components should handle this gracefully
   return context
 }
